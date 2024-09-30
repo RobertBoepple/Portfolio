@@ -18,9 +18,15 @@
   justify-content: space-between;
   flex-direction: row;
   .menu-links {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 12.5 em;
+    >ul {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        list-style: none;
+    }
   }
   li {
     > a {
@@ -29,8 +35,8 @@
     }
   }
   img {
-    width: 250px;
-    height: 250px;
+    width: 132px;
+    height: 48px;
   }
 }
 
@@ -42,6 +48,7 @@
   width: 100%;
   color: #d9d9d9;
   text-align: center;
+  margin-bottom: 80px;
   > h2 {
     font-family: "Fira Code";
     font-weight: 400;
@@ -80,4 +87,71 @@
       }
     }
   }
+}
+
+.nav-sozial-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5em;
+  > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 30px;
+    border: 1px solid #3dcfb6;
+    border-radius: 32px;
+    transition: all 125ms ease-in-out;
+    &:hover {
+      background-color: #08463ba4;
+    }
+  }
+}
+
+.seperator {
+    height: 200px;
+    width: 1px;
+    border: 1px solid #ffffff;
+}
+
+.sozial-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  > .mail {
+    font-size: 1.125em;
+    font-family: "Karla";
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+    transform: rotate(-90deg);
+    width: 100%;
+    position: relative;
+    bottom: 112px;
+    transition: all 125ms ease-in-out;
+    &:hover {
+      color: #3dcfb6;
+    }
+  }
+  > a {
+    >img{
+      transition: all 125ms ease-in-out;
+      &:hover {
+        transform: scale(1.15);
+        filter: drop-shadow(-2px 2px 1px #304440);
+    }
+  }
+}
 }
