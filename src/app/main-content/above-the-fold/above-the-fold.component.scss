@@ -1,35 +1,83 @@
-.atf-container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    font-family: "Fira Code";
+.atf-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  font-family: "Fira Code";
 }
 
 .menu-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  .menu-links {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
-    .menu-links{
-        display: flex;
-        flex-direction: row;
-        gap: 12.5 em;
+    gap: 12.5 em;
+  }
+  li {
+    > a {
+      text-decoration: none;
+      color: #ffffff;
     }
-    li {
-        >a{
-            text-decoration: none;
-            color: #ffffff;
-        }
+  }
+  img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  color: #d9d9d9;
+  text-align: center;
+  > h2 {
+    font-family: "Fira Code";
+    font-weight: 400;
+    font-size: 3em;
+  }
+  > h1 {
+    font-family: "Karla";
+    font-weight: 700;
+    font-size: 8em;
+  }
+}
+
+.action-btn {
+  width: 100%;
+  color: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .btn {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    > a {
+      font-family: "Karla";
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.125em;
+      border: 1px solid #ffffff;
+      border-radius: 100px;
+      padding: 16px 24px;
+      cursor: pointer;
+      transition: all 125ms ease-in-out;
+      &:hover {
+        background-color: #08463b3f;
+        transform: scale(1.05);
+      }
     }
-    img {
-        width: 250px;
-        height: 250px;
-    }
+  }
 }
