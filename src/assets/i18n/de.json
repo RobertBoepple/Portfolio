@@ -1,0 +1,13 @@
+{
+    "menu": {
+      "aboutMe": "Über mich",
+      "skills": "Fähigkeiten",
+      "projects": "Projekte"
+    },
+    "headline": {
+      "title": "Frontend Entwickler",
+      "name": "Robert Böpple",
+      "checkWork": "Schau meine Arbeit an",
+      "contactMe": "Kontaktiere mich"
+    }
+  }
