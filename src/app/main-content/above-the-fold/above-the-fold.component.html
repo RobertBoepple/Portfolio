@@ -2,7 +2,7 @@
   <nav class="menu-bar">
     <div class="menu-links">
       <label class="switch">
-        <input type="checkbox"/>
+        <input type="checkbox" (change)="toggleLanguage($event)"/>
         <span
           class="slider"></span>
         <div>
@@ -10,9 +10,9 @@
           <span>DE</span>
         </div>
       </label>
-      <a href="#">aboutMe</a>
-      <a href="#">skills</a>
-      <a href="#">projects</a>
+      <a href="#">{{ 'menu.aboutMe' | translate }}</a>
+      <a href="#">{{ 'menu.skills' | translate }}</a>
+      <a href="#">{{ 'menu.projects' | translate }}</a>
     </div>
     <img src="../../../assets/img/mylogo/myLogo-full.png" alt="" />
   </nav>
