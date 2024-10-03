@@ -6,8 +6,14 @@
     },
     "headline": {
       "title": "Frontend Developer",
-      "name": "Mike Schauber",
+      "name": "Robert Böpple",
       "checkWork": "Check my work",
       "contactMe": "Contact me"
+    },
+    "banner-content": {
+      "1": "Available for remote work",
+      "2": "Frontend Developer",
+      "3": "Based in Munich",
+      "4": "Open to work"
     }
 }
