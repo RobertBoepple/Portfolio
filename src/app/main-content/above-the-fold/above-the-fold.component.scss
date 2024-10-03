@@ -237,9 +237,10 @@ a {
   left: -100px;
   right: -100px;
   height: 62px;
-  border: 1px solid #3dcfb6;
   background-color: rgba(255, 255, 255, 0.1);
-  transform: rotate(-3deg);;
+  transform: rotate(-3deg);
+  backdrop-filter: blur(4px);
+  overflow: hidden;
 }
 
 .banner-content{
