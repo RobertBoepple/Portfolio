@@ -95,6 +95,7 @@ a {
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding: 0 96px;
 }
 
 .bottom-nav {
@@ -120,7 +121,7 @@ a {
 .seperator {
     height: 200px;
     width: 1px;
-    border: 1px solid #ffffff;
+    border: 1px solid #3DCFB6;
 }
 
 .sozial-links {
@@ -128,6 +129,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  width: 24px;
 
   > .mail {
     font-size: 1.125em;
@@ -136,7 +138,6 @@ a {
     text-decoration: none;
     color: #ffffff;
     transform: rotate(-90deg);
-    width: 100%;
     position: relative;
     bottom: 112px;
     transition: all 125ms ease-in-out;
@@ -237,7 +238,7 @@ a {
   left: -100px;
   right: -100px;
   height: 62px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(56, 61, 64, 0.45);
   transform: rotate(-3deg);
   backdrop-filter: blur(4px);
   overflow: hidden;

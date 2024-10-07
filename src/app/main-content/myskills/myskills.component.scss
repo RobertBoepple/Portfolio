@@ -25,15 +25,15 @@
 }
 
 .skill-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5em;
-    padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding: 1em;
   width: 100%;
   height: 100%;
   border: 1px solid rgb(35, 140, 122);
   border-radius: 30px;
-  background-color: white;
+  background-color: rgba(39, 157, 142, 0.1);
   > h2 {
     font-size: 4em;
     color: #3dcfb6;
@@ -45,7 +45,7 @@
     font-size: 1.125em;
     font-weight: 400;
   }
-  > p.contact-me{
+  > p.contact-me {
     font-family: "Karla";
     font-size: 1em;
     font-weight: 400;
@@ -65,11 +65,17 @@
   > button {
     font-family: "Karla";
     font-size: 1.125em;
-    background-color: #3DCFB61A;
+    background-color: #3dcfb61a;
     width: 122px;
     border: 1px solid #ffffff;
-    border-radius: 30px;  
-    padding: 12px 12px;  
+    border-radius: 30px;
+    padding: 12px 12px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #3dcfb6;
+      color: white;
+    }
   }
 }
 
@@ -80,22 +86,25 @@
   justify-content: center;
   gap: 20px;
   width: 632px;
-  
 }
 
 .skill-icon {
-  height: 116px ;
-    width: 104px;
+  height: 116px;
+  width: 104px;
   font-family: "Fira Code";
   font-size: 1.125em;
   font-weight: 400;
   display: flex;
   flex-direction: column-reverse;
- justify-content: flex-end;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
   > img {
     height: 64px;
     width: 64px;
+  }
+  &:hover {
+    transform: rotateY(360deg);
+    transition: transform 500ms ease-in-out;
   }
 }
