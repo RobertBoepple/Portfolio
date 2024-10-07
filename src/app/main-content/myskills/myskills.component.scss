@@ -1,0 +1,31 @@
+.skill-container {
+    width: 100%;
+}
+
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.skill-wrapper-text{
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+}
+
+.skill-text{
+    width: 50%;
+    border: 1px solid rgb(35, 140, 122);
+    border-radius: 30px;
+    background-color: white;
+    >h2 {
+        font-size: 4em;
+        color: #3DCFB6;
+        font-family: "Fira Code";
+        font-weight: 700;
+    }
+}
