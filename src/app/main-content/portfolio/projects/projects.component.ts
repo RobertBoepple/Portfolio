@@ -11,17 +11,31 @@ export class ProjectsComponent {
   projects = [
     {
       name: 'Join',
-      techStack: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
+      techStack: [
+        { name: 'JavaScript' },
+        { name: 'HTML' },
+        { name: 'CSS' },
+        { name: 'Firebase' }
+      ],
       index: 0
     },
     {
       name: 'El Pollo Loco',
-      techStack: ['JavaScript', 'HTML', 'CSS'],
+      techStack: [
+        { name: 'JavaScript' },
+        { name: 'HTML' },
+        { name: 'CSS' }
+      ],
       index: 1
     },
     {
       name: 'Pokédex',
-      techStack: ['JavaScript', 'HTML', 'CSS', 'Rest-Api'],
+      techStack: [
+        { name: 'JavaScript' },
+        { name: 'HTML' },
+        { name: 'CSS' },
+        { name: 'Rest-Api' }
+      ],
       index: 2
     }
   ];

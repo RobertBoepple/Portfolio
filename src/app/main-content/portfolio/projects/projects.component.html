@@ -1,8 +1,13 @@
-<p>projects works!</p>
-<div class="project-container">
+<div class="project-wrapper">
+  <div class="project-container">
     @for (project of projects; track $index) {
-        <h3>{{ project.name }}</h3>
-        <span>{{ project.techStack}}</span>
-       
+    <div class="single-project">
+      <h3 class="project-name">{{ project.name }}</h3>
+      @for (tech of project.techStack; track $index){
+      <span class="tech-stack">{{ tech.name }}</span>
+      }
+    </div>
     }
+  </div>
+  <div class="image-container"></div>
 </div>
