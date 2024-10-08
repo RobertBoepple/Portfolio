@@ -2,53 +2,60 @@
   <nav class="menu-bar">
     <div class="menu-links">
       <label class="switch">
-        <input type="checkbox" (change)="toggleLanguage($event)"/>
-        <span
-          class="slider"></span>
+        <input type="checkbox" (change)="toggleLanguage($event)" />
+        <span class="slider"></span>
         <div>
           <span>EN</span>
           <span>DE</span>
         </div>
       </label>
-      <a href="#">{{ 'menu.aboutMe' | translate }}</a>
-      <a href="#">{{ 'menu.skills' | translate }}</a>
-      <a href="#">{{ 'menu.projects' | translate }}</a>
+      <a href="#">{{ "menu.aboutMe" | translate }}</a>
+      <a href="#">{{ "menu.skills" | translate }}</a>
+      <a href="#">{{ "menu.projects" | translate }}</a>
     </div>
     <img src="../../../assets/img/mylogo/myLogo-full.png" alt="" />
   </nav>
   <div class="headline">
-    <h2>{{'headline.title' | translate}}</h2>
-    <h1>{{ 'headline.name' | translate}}</h1>
+    <h2>{{ "headline.title" | translate }}</h2>
+    <h1>{{ "headline.name" | translate }}</h1>
 
     <div class="action-btn">
       <div class="btn">
-        <a href="">{{'headline.checkWork' | translate}}</a>
-        <a href="">{{'headline.contactMe' | translate}}</a>
+        <a href="">{{ "headline.checkWork" | translate }}</a>
+        <a href="">{{ "headline.contactMe" | translate }}</a>
       </div>
     </div>
   </div>
 </div>
 <div class="nav-sozial-links">
-    <div class="bottom-nav">
-        <a href="'"><img src="../../../assets/icons/above-arrow.png" alt=""></a>
-        <div class="seperator"></div>
+  <div class="bottom-nav">
+    <a href="'"><img src="../../../assets/icons/above-arrow.png" alt="" /></a>
+    <div class="seperator"></div>
+  </div>
+  <div class="sozial-links">
+    <a class="mail" href="mailto:robert.boepple@gmail.com"
+      >robert.boepple&#64;gmail.com</a
+    >
+    <a href="https://github.com/RobertBoepple"
+      ><img src="../../../assets/icons/github.png" target="_blank" alt=""
+    /></a>
+    <a href="https://www.linkedin.com/in/robert-boepple/"
+      ><img src="../../../assets/icons/linkedin.png" target="_blank" alt=""
+    /></a>
+    <div class="seperator"></div>
+    <div class="banner">
+      <div class="banner-content">
+        @for (banner of banners; track $index) {
+        <img src="../../../assets/icons/dot.png" alt="" />
+        <div><span>{{ "banner-content." + ($index+1) | translate }}</span></div>
+        }
+      </div>
+      <div class="banner-content">
+        @for (banner of banners; track $index) {
+        <img src="../../../assets/icons/dot.png" alt="" />
+        <div><span>{{ "banner-content." + ($index+1) | translate }}</span></div>
+        }
+      </div>
     </div>
-    <div class="sozial-links">
-        <a class="mail" href="mailto:robert.boepple@gmail.com">robert.boepple&#64;gmail.com</a>
-        <a href="https://github.com/RobertBoepple"><img src="../../../assets/icons/github.png" target="_blank" alt=""></a>
-        <a href="https://www.linkedin.com/in/robert-boepple/"><img src="../../../assets/icons/linkedin.png" target="_blank" alt=""></a>
-        <div class="seperator"></div>
-        <div class="banner">
-          <div class="banner-content">
-              <img src="../../../assets/icons/dot.png" alt="">
-              <span>{{'banner-content.1' | translate}}</span>
-              <img src="../../../assets/icons/dot.png" alt="">
-              <span>{{'banner-content.2' | translate}}</span>
-              <img src="../../../assets/icons/dot.png" alt="">
-              <span>{{'banner-content.3' | translate}}</span>
-              <img src="../../../assets/icons/dot.png" alt="">
-              <span>{{'banner-content.4' | translate}}</span>              
-        </div>
+  </div>
 </div>
-
-

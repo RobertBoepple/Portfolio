@@ -11,6 +11,14 @@ import { TranslationService } from '../../translation.service';
 })
 export class AboveTheFoldComponent {
   translate = inject(TranslationService);
+  banners: string[]=[
+    'banner-content.1',
+    'banner-content.2',
+    'banner-content.3',
+    'banner-content.4',
+    'banner-content.5',
+    'banner-content.6',
+  ]
 
   constructor(private translationService: TranslationService) {}
 
