@@ -1,0 +1,40 @@
+.portfolio-container {
+    padding: 64px 96px;
+
+}
+
+.headline {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #3DCFB6;
+    font-family: "Karla";
+
+    >span {
+        width: 100%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    >h2 {
+        width: 100%;
+        font-family: "Fira Code";
+        font-size: 64px;
+        font-weight: 700;
+        letter-spacing: -3px;
+    }
+
+    >p {
+        width: 100%;
+        margin-top: 21px;
+        margin-bottom: 41px;
+        width: 100%;
+        color: #FFFFFF;
+        font-size: 18px;
+        max-width: 456px;
+        text-align: justify;
+    }
+}
