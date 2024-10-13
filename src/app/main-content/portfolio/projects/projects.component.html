@@ -2,10 +2,15 @@
   <div class="project-container">
     @for (project of projects; track $index) {
     <div class="single-project">
-      <h3 class="project-name">{{ project.name }}</h3>
+      <div class="name-container">
+        <h3>{{ project.name }}</h3>
+        <img src="../../../../assets/icons/arrow-outward-white.png" alt="">
+      </div>
+      <div class="tech-stack-container">
       @for (tech of project.techStack; track $index){
-      <span class="tech-stack">{{ tech.name }}</span>
+        <span class="tech-stack">{{ tech.name }}</span>
       }
+    </div>
     </div>
     }
   </div>

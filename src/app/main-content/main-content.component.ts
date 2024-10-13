@@ -4,11 +4,12 @@ import { FooterComponent } from '../shared/components/footer/footer.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { MyskillsComponent } from './myskills/myskills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from "./contact/contact.component";
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [AboveTheFoldComponent, FooterComponent, AboutmeComponent, MyskillsComponent, PortfolioComponent],
+  imports: [AboveTheFoldComponent, FooterComponent, AboutmeComponent, MyskillsComponent, PortfolioComponent, ContactComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
