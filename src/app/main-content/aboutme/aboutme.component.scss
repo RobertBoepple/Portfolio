@@ -3,8 +3,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-self: center;
+    padding: 64px 96px;
     
 }
 
@@ -12,7 +13,7 @@
     
     display: flex;
     gap: 6em;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .wrapper-about-me-text{
