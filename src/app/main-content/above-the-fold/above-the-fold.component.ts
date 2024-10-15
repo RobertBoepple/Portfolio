@@ -20,11 +20,6 @@ export class AboveTheFoldComponent {
     'banner-content.6',
   ]
 
-  constructor(private translationService: TranslationService) {}
-
-  toggleLanguage(event: any): void {
-    const language = event.target.checked ? 'de' : 'en';
-    this.translationService.switchLanguage(language);
-  }
+  
 }
 
