@@ -1,7 +1,7 @@
 <div class="project-wrapper">
   <div class="project-container">
     @for (project of projects; track $index) {
-    <div class="single-project" (mouseenter)="onMouseEnter($index)" (mouseleave)="onMouseLeave($index)">
+    <div class="single-project" (mouseover)="hoverProject($index)" (mouseenter)="onMouseEnter($index)" (mouseleave)="onMouseLeave($index)">
       <div class="name-container">
         <h3>{{ project.name }}</h3>
         <img [ngClass]="{'show-arrow': showArrowHover[$index]}" src="../../../../assets/icons/arrow-outward-white.png" alt="">
@@ -14,5 +14,9 @@
     </div>
     }
   </div>
-  <div class="image-container"></div>
+  <div class="image-container">
+    @if (imgPathProject) {
+      <img [src]="imgPathProject" alt="Project Image">
+    }    
+  </div>
 </div>

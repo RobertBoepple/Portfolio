@@ -10,13 +10,26 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   showArrowHover: { [key: number]: boolean } = {};
+  imgPathProject: string='';
 
   onMouseEnter(index: number) {
     this.showArrowHover[index] = true;
+    this.hoverProject(index);
   }
   
   onMouseLeave(index: number) {
     this.showArrowHover[index] = false;
+    this.imgPathProject = '';
+  }
+
+  hoverProject(index: number) {
+    if (index === 0) {
+      this.imgPathProject = 'assets/img/join.jpg';
+    } else if (index === 1) {
+      this.imgPathProject = 'assets/img/El Pollo Loco.png';
+    } else if (index === 2) {
+      this.imgPathProject = 'assets/img/Pokedex.png';
+    }
   }
 
   projects = [
