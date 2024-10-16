@@ -2,21 +2,21 @@
   <div class="skill-wrapper">
     <div class="main-content">
       <div class="skill-wrapper-text">
-        <p>{{ 'skillset.skills' | translate }}</p>
+        <p>{{ "skillset.skills" | translate }}</p>
         <div class="skill-text">
-          <h2>{{ 'skillset.skillSet' | translate }}</h2>
-          <p class="about-me">{{ 'skillset.description' | translate }}
-          </p>
+          <h2>{{ "skillset.skillSet" | translate }}</h2>
+          <p class="about-me">{{ "skillset.description" | translate }}</p>
           <div>
-            <span class="white">{{ 'skillset.skillText' | translate }}</span><span class="green">{{ 'skillset.skillSpan' | translate }}</span>
+            <span class="white">{{ "skillset.skillText" | translate }}</span
+            ><span class="green">{{ "skillset.skillSpan" | translate }}</span>
           </div>
           <p class="contact-me">
-            {{ 'skillset.contactText' | translate }}
+            {{ "skillset.contactText" | translate }}
           </p>
-          <button>{{ 'skillset.letsTalk' | translate }}</button>
+          <button>{{ "skillset.letsTalk" | translate }}</button>
         </div>
       </div>
-      <div class="skill-image">
+      <div class="icons">
         <div class="skill-icon">
           HTML<img src="../../../assets/skill-icons/white/html.png" alt="" />
         </div>
@@ -53,9 +53,21 @@
         <div class="skill-icon">
           Scrum <img src="../../../assets/skill-icons/white/scrum.png" alt="" />
         </div>
-        <div class="skill-icon">
+        <div class="speech-cont skill-icon last-skill-icon" >
+          <div [ngClass]="{ 'speech-show': this.mind }" class="speech sb">
+            <span> {{ "skillset.interest" | translate }}</span>
+            <div>
+              <img src="../../../assets/skill-icons/green/react.png" alt="" />
+              <img src="../../../assets/skill-icons/green/vue.png" alt="" />
+            </div>
+          </div>
           Growth mindset
-          <img src="../../../assets/skill-icons/green/growth.png" alt="" />
+          <img
+            (mouseover)="hover('in')"
+            (mouseout)="hover('out')"
+            src="../../../assets/skill-icons/green/growth.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
