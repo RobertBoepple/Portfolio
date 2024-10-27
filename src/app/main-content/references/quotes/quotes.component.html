@@ -1,0 +1,9 @@
+<div class="quotes-container">
+  @for (quote of quotes; track $index) {
+  <div>
+    <span>{{ quote.QuoteId}}</span>
+    <span>{{ quote.Author }}</span>
+    <span>{{ quote.Quote }}</span>
+  </div>
+  }
+</div>
