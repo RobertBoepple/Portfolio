@@ -1,16 +1,16 @@
 <nav class="menu-bar">
-    <div class="menu-links">
-      <label class="switch">
-        <input type="checkbox" (change)="toggleLanguage($event)"/>
-        <span class="slider"></span>
-        <div>
-          <span>EN</span>
-          <span>DE</span>
-        </div>
-      </label>
-      <a href="#">{{ "menu.aboutMe" | translate }}</a>
-      <a href="#">{{ "menu.skills" | translate }}</a>
-      <a href="#">{{ "menu.projects" | translate }}</a>
-    </div>
-    <img src="../../../assets/img/mylogo/myLogo-full.png" alt="" />
-  </nav>
+  <div class="menu-links">
+    <label class="switch">
+      <input type="checkbox" id="languageToggle" (change)="toggleLanguage($event)" />
+      <span class="slider"></span>
+      <div>
+        <span>EN</span>
+        <span>DE</span>
+      </div>
+    </label>
+    <a href="#">{{ "menu.aboutMe" | translate }}</a>
+    <a href="#">{{ "menu.skills" | translate }}</a>
+    <a href="#">{{ "menu.projects" | translate }}</a>
+  </div>
+  <img src="../../../assets/img/mylogo/myLogo-full.png" alt="" />
+</nav>

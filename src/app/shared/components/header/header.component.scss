@@ -90,10 +90,6 @@ a {
   transition: all 100ms ease-in-out;
 }
 
-.slider.de:before {
-  content: "DE";
-}
-
 .switch input:checked + .slider {
   background: #6992c000;
 }
@@ -103,5 +99,6 @@ a {
 }
 
 .switch input:checked + .slider:before {
+  content: "DE";
   transform: translateX(36px);
 }
