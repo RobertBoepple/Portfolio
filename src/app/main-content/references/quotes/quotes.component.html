@@ -1,9 +1,11 @@
-<div class="quotes-container">
+<swiper-container class="quotes-container" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" navigation="true" loop="true">
   @for (quote of quotes; track $index) {
-  <div>
-    <span>{{ quote.QuoteId}}</span>
-    <span>{{ quote.Author }}</span>
-    <span>{{ quote.Quote }}</span>
-  </div>
+  <swiper-slide>
+    <div>{{ quote.QuoteId}}</div>
+    <div>{{ quote.Author }}</div>
+    <div>{{ quote.Quote }}</div>
+  </swiper-slide>
   }
-</div>
+</swiper-container>
