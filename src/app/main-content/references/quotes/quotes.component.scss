@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 16px;
   }
   
   .wrapper-arrow {
@@ -31,11 +32,14 @@
   
   #dot-wrapper {
     display: flex;
-    gap: 4px;
+    gap: 16px;
     align-items: center;
   }
   
   .list {
+    color: #fff;
+    font-family: Karla;
+    font-size: 1.25em;
     height: 300px;
     position: absolute;
     top: 50%;
@@ -46,7 +50,7 @@
   .list li {
     list-style-type: none;
     width: 660px;
-    height: 300px;
+    height: 350px;
     opacity: 0.45;
     position: absolute;
     left: 50%;
@@ -87,5 +91,28 @@
   .list .new-next {
     opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .quote {
+    height: 80%;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .seperator {
+    width: 50%;
+    height: 1px;
+    background-color: white
+  }
+
+  .person {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
   }
   

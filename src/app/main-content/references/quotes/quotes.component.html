@@ -8,11 +8,17 @@
             'next': getNextIndex() === i,
             'hide': i !== currentIndex && i !== getPrevIndex() && i !== getNextIndex()
           }">
-        {{ quote.Author }}
-        {{ quote.Quote }}
+        <div class="quote">
+        <div>
+          {{ quote.Quote }}
+        </div>
+        <div class="person">
+          <div class="seperator"></div>
+        {{ quote.Author }} - {{ quote.Title }}
+      </div>
+    </div>
       </li>
     </ul>
-    <div class="swipe"></div>
   </div>
 </div>
 <div class="wrapper-buttons">
