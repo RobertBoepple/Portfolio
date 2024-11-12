@@ -1,11 +1,41 @@
-<swiper-container class="quotes-container" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
-slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
-coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" navigation="true" loop="true">
-  @for (quote of quotes; track $index) {
-  <swiper-slide>
-    <div>{{ quote.QuoteId}}</div>
-    <div>{{ quote.Author }}</div>
-    <div>{{ quote.Quote }}</div>
-  </swiper-slide>
-  }
-</swiper-container>
+<div class="wrapper-carousel">
+  <div class="carousel">
+    <ul class="list">
+      <li *ngFor="let quote of quotes; let i = index" 
+          [ngClass]="{
+            'act': currentIndex === i,
+            'prev': getPrevIndex() === i,
+            'next': getNextIndex() === i,
+            'hide': i !== currentIndex && i !== getPrevIndex() && i !== getNextIndex()
+          }">
+        {{ quote.Author }}
+        {{ quote.Quote }}
+      </li>
+    </ul>
+    <div class="swipe"></div>
+  </div>
+</div>
+<div class="wrapper-buttons">
+  <div class="wrapper-arrow">
+    <svg class="icon" (click)="prev()" width="40" height="40" viewBox="0 0 40 40" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M 13.2283 20.6667 L 20.4793 27.918 C 20.6093 28.0478 20.6773 28.2008 20.6833 28.377 C 20.6893 28.553 20.6188 28.7146 20.4716 28.8617 C 20.3248 29.0034 20.1675 29.0757 20 29.0783 C 19.8324 29.0808 19.6752 29.0086 19.5283 28.8617 L 11.4206 20.754 C 11.3042 20.6376 11.2225 20.5187 11.1756 20.3973 C 11.1285 20.276 11.105 20.1436 11.105 20 C 11.105 19.8564 11.1285 19.724 11.1756 19.6027 C 11.2225 19.4813 11.3042 19.3624 11.4206 19.246 L 19.5283 11.1383 C 19.653 11.0137 19.8046 10.947 19.9833 10.9383 C 20.162 10.9299 20.3248 10.9966 20.4716 11.1383 C 20.6188 11.2854 20.6923 11.444 20.6923 11.614 C 20.6923 11.7842 20.6188 11.9428 20.4716 12.0897 L 13.2283 19.3333 H 28.6666 C 28.8564 19.3333 29.015 19.397 29.1423 19.5243 C 29.2696 19.6517 29.3333 19.8102 29.3333 20 C 29.3333 20.1898 29.2696 20.3483 29.1423 20.4757 C 29.015 20.603 28.8564 20.6667 28.6666 20.6667 H 13.2283 Z"
+        fill="white" />
+    </svg>
+  </div>
+  <div id="dot-wrapper">
+    @for (item of quotes; track quotes; let index = $index) {
+      <div class="dot" [class.active]="index === currentIndex"
+      (click)="setActiveDot(index)">
+    </div>
+    }
+  </div>
+  <div class="wrapper-arrow">
+    <svg class="icon" (click)="next()" width="40" height="40" viewBox="0 0 40 40" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M 26.7715 20.6667 H 11.3332 C 11.1434 20.6667 10.9848 20.603 10.8575 20.4757 C 10.7302 20.3484 10.6665 20.1898 10.6665 20 C 10.6665 19.8102 10.7302 19.6517 10.8575 19.5244 C 10.9848 19.397 11.1434 19.3334 11.3332 19.3334 H 26.7715 L 19.5205 12.082 C 19.3905 11.9522 19.3225 11.7992 19.3165 11.623 C 19.3105 11.447 19.3811 11.2855 19.5282 11.1384 C 19.6751 10.9966 19.8323 10.9244 19.9998 10.9217 C 20.1674 10.9192 20.3246 10.9915 20.4715 11.1384 L 28.5792 19.246 C 28.6956 19.3625 28.7773 19.4814 28.8242 19.6027 C 28.8713 19.724 28.8948 19.8565 28.8948 20 C 28.8948 20.1436 28.8713 20.276 28.8242 20.3974 C 28.7773 20.5187 28.6956 20.6376 28.5792 20.754 L 20.4715 28.8617 C 20.3468 28.9864 20.1952 29.053 20.0165 29.0617 C 19.8378 29.0701 19.6751 29.0035 19.5282 28.8617 C 19.3811 28.7146 19.3075 28.556 19.3075 28.386 C 19.3075 28.2158 19.3811 28.0572 19.5282 27.9104 L 26.7715 20.6667 Z"
+        fill="white" />
+    </svg>
+  </div>
