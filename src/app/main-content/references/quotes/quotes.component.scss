@@ -47,13 +47,13 @@
     list-style-type: none;
     width: 660px;
     height: 300px;
-    opacity: 0.5;
+    opacity: 0.45;
     position: absolute;
     left: 50%;
     margin-left: -330px;
     border-radius: 2px;
     background: #3dcfb64d;
-    transition: transform 1s, opacity 10s;
+    transition: transform 1s, opacity 1s;
     border-radius: 32px;
     border: 1px solid rgb(61, 207, 182);
   }
@@ -89,14 +89,3 @@
     transition: opacity 0.5s, transform 0.5s;
   }
   
- /*  .swipe {
-    width: 700px;
-    height: 300px;
-    position: absolute;
-    background-color:yellow;
-    border-radius: 2px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-  } */

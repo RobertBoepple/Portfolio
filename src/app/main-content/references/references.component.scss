@@ -1,5 +1,5 @@
 .references-container {
-    border: steelblue 1px solid;
+    
     width: 100%;
     height: 600px;
     padding: 64px 96px;
@@ -18,13 +18,5 @@
 app-quotes {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-}
-.quotes-container{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 500px;
-    border: solid 1px white;
+    align-items: center;    
 }
