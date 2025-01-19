@@ -20,8 +20,9 @@
     "@angular/router": "^17.0.0",
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
+    "@types/swiper": "^5.4.3",
     "rxjs": "~7.8.0",
-    "swiper": "^11.1.14",
+    "swiper": "^11.1.15",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },
