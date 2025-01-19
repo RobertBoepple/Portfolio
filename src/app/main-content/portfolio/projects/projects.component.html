@@ -1,23 +1,62 @@
-
 <div class="project-wrapper">
   <div class="project-container">
-    @for (project of projects; track $index) {
-    <div class="single-project" (mouseover)="hoverProject($index)" (mouseenter)="onMouseEnter($index)" (mouseleave)="onMouseLeave($index)">
+    @for (project of projects; track project.index) {
+    <div
+      class="single-project"
+      (mouseover)="hoverProject(project.index)"
+      (mouseenter)="onMouseEnter(project.index)"
+      (mouseleave)="onMouseLeave(project.index)"
+      (click)="openProjectDetails(project)"
+    >
       <div class="name-container">
         <h3>{{ project.name }}</h3>
-        <img [ngClass]="{'show-arrow': showArrowHover[$index]}" src="../../../../assets/icons/arrow-outward-white.png" alt="">
+        <img
+          [ngClass]="{ 'show-arrow': showArrowHover[project.index] }"
+          src="assets/icons/arrow-outward-white.png"
+          alt=""
+        />
       </div>
       <div class="tech-stack-container">
-      @for (tech of project.techStack; track $index){
+        @for (tech of project.techStack; track tech.name) {
         <span class="tech-stack">{{ tech.name }}</span>
-      }
-    </div>
+        }
+      </div>
     </div>
     }
   </div>
   <div class="image-container">
     @if (imgPathProject) {
-      <img [src]="imgPathProject" alt="Project Image">
-    }    
+    <img [src]="imgPathProject" alt="Project Image" />
+    }
   </div>
+  @if (selectedProject) {
+  <div class="overlay">
+    <div class="overlay-content">
+      <div class="close-button" (click)="closeOverlay()">×</div>
+      <h2>{{ selectedProject.name }}</h2>
+      <img [src]="selectedProject.imgPath" alt="{{ selectedProject.name }}" />
+      <p>{{ selectedProject.description }}</p>
+      <div class="tech-stack-overlay">
+        @for (tech of selectedProject.techStack; track tech.name) {
+        <span class="tech-stack">{{ tech.name }}</span>
+        }
+      </div>
+      @if (selectedProject.githubLink) {
+      <a
+        [href]="selectedProject.githubLink"
+        target="_blank"
+        class="project-link"
+      >
+        <span>GitHub</span>
+        <img src="assets/icons/github-mark.png" alt="GitHub" />
+      </a>
+      } @if (selectedProject.liveLink) {
+      <a [href]="selectedProject.liveLink" target="_blank" class="project-link">
+        <span>Live Demo</span>
+        <img src="assets/icons/arrow-outward-white.png" alt="Live Demo" />
+      </a>
+      }
+    </div>
+  </div>
+  }
 </div>
