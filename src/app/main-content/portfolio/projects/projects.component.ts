@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 interface Project {
+  id: string;
   name: string;
   techStack: { name: string }[];
   description: string;
@@ -25,6 +26,7 @@ export class ProjectsComponent {
 
   projects: Project[] = [
     {
+      id: '01',
       name: 'Join',
       techStack: [
         { name: 'JavaScript' },
@@ -40,6 +42,7 @@ export class ProjectsComponent {
       index: 0,
     },
     {
+      id: '02',
       name: 'El Pollo Loco',
       techStack: [{ name: 'JavaScript' }, { name: 'HTML' }, { name: 'CSS' }],
       description: 'Ein JavaScript-basiertes Jump-and-Run Spiel.',
@@ -49,6 +52,7 @@ export class ProjectsComponent {
       index: 1,
     },
     {
+      id: '03',
       name: 'Pokédex',
       techStack: [
         { name: 'JavaScript' },
