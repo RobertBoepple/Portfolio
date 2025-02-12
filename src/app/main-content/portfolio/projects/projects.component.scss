@@ -112,6 +112,7 @@
   }
   .overlay {
     position: fixed;
+    backdrop-filter: blur(10px);
     top: 0;
     left: 0;
     width: 100%;
@@ -125,6 +126,8 @@
   }
   
   .overlay-content {
+    background: linear-gradient(to top right,#1c1c1c 0 40%,80%,#08463b);
+    box-shadow: 0 0 74px 8px #3dcfb64d;
     display: flex;
     justify-content: space-between;
     gap: 88px;
@@ -158,5 +161,42 @@
     object-fit: cover;
   }
 }
+.overlay-column {
+  flex: 1;
+  border: solid 1px aqua;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-description {
+  border: solid 1px pink;
+  >h3 {
+    font-size: 1.5em;
+    font-family: Karla;
+    font-weight: 700;
+    font-size: 128px;
+    color: #3dcfb6;
+  }
+  >h2 {
+    font-size: 64px;
+    font-family: "Fira Code";
+    font-weight: 700;
+    color: #fff;
+  }
+  >h4 {
+    font-size: 24px;
+    font-family: "Fira Code";
+    font-weight: 700;
+    color: #3dcfb6;
+  }
+  >p {
+    font-size: 18px;
+    font-family: Karla;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
 
 

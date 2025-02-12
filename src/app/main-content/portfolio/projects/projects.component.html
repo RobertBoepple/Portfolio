@@ -32,41 +32,47 @@
   @if (selectedProject) {
   <div class="overlay">
     <div class="overlay-content">
-      <div class="project-description">
-        <div class="close-button" (click)="closeOverlay()">×</div>
-        <h3>{{ selectedProject.id }}</h3>
-        <h2>{{ selectedProject.name }}</h2>
-        <h4>What is this project about?</h4>
-        <p>{{ selectedProject.description }}</p>
-        <div class="tech-stack-overlay">
-          @for (tech of selectedProject.techStack; track tech.name) {
-          <span class="tech-stack">{{ tech.name }}</span>
+      <div class="overlay-column">
+        <div class="project-description">
+          <div class="close-button" (click)="closeOverlay()">×</div>
+          <h3>{{ selectedProject.id }}</h3>
+          <h2>{{ selectedProject.name }}</h2>
+          <h4>What is this project about?</h4>
+          <p>{{ selectedProject.description }}</p>
+          <div class="tech-stack-overlay">
+            @for (tech of selectedProject.techStack; track tech.name) {
+            <span class="tech-stack">{{ tech.name }}</span>
+            }
+          </div>
+        </div>
+        <div class="button-container">
+          @if (selectedProject.githubLink) {
+          <a
+            [href]="selectedProject.githubLink"
+            target="_blank"
+            class="project-link"
+          >
+            <span>GitHub</span>
+            <img src="assets/icons/github-mark.png" alt="GitHub" />
+          </a>
+          } @if (selectedProject.liveLink) {
+          <a
+            [href]="selectedProject.liveLink"
+            target="_blank"
+            class="project-link"
+          >
+            <span>Live Demo</span>
+            <img src="assets/icons/arrow-outward-white.png" alt="Live Demo" />
+          </a>
           }
         </div>
-        @if (selectedProject.githubLink) {
-        <a
-          [href]="selectedProject.githubLink"
-          target="_blank"
-          class="project-link"
-        >
-          <span>GitHub</span>
-          <img src="assets/icons/github-mark.png" alt="GitHub" />
-        </a>
-        } @if (selectedProject.liveLink) {
-        <a
-          [href]="selectedProject.liveLink"
-          target="_blank"
-          class="project-link"
-        >
-          <span>Live Demo</span>
-          <img src="assets/icons/arrow-outward-white.png" alt="Live Demo" />
-        </a>
-        }
       </div>
-      <div class="project-image">
-        @if (selectedProject) {
-        <img [src]="selectedProject.imgPath" alt="{{ selectedProject.name }}" />
-        }
+      <div class="overlay-column">
+        <div class="project-image">
+          @if (selectedProject) {
+          <img [src]="selectedProject.imgPath" alt="{{ selectedProject.name }}" />
+          }
+        </div>
       </div>
     </div>
   </div>
