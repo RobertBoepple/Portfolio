@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 interface Project {
   id: string;
   name: string;
-  techStack: { name: string }[];
+  techStack: { name: string, image: string }[];
   description: string;
   githubLink: string;
   liveLink: string;
@@ -29,10 +29,10 @@ export class ProjectsComponent {
       id: '01',
       name: 'Join',
       techStack: [
-        { name: 'JavaScript' },
-        { name: 'HTML' },
-        { name: 'CSS' },
-        { name: 'Firebase' },
+        { name: 'JavaScript', image: 'assets/icons/JavaScript.svg' },
+        { name: 'HTML', image: 'assets/icons/HTML.svg' },
+        { name: 'CSS',image: 'assets/icons/CSS.svg' },
+        { name: 'Firebase', image: 'assets/icons/Firebase.svg' },
       ],
       description:
         'Ein Kanban-Board Projekt für Aufgabenverwaltung und Teamkollaboration.',
@@ -44,7 +44,11 @@ export class ProjectsComponent {
     {
       id: '02',
       name: 'El Pollo Loco',
-      techStack: [{ name: 'JavaScript' }, { name: 'HTML' }, { name: 'CSS' }],
+      techStack: [
+         { name: 'JavaScript', image: 'assets/icons/JavaScript.svg' },
+         { name: 'HTML', image: 'assets/icons/HTML.svg' }, 
+         { name: 'CSS', image: 'assets/icons/CSS.svg' }
+        ],
       description: 'Ein JavaScript-basiertes Jump-and-Run Spiel.',
       githubLink: 'https://github.com/IhrGithubLink/ElPolloLoco',
       liveLink: 'https://IhreLiveDemoURL/ElPolloLoco',
@@ -55,10 +59,10 @@ export class ProjectsComponent {
       id: '03',
       name: 'Pokédex',
       techStack: [
-        { name: 'JavaScript' },
-        { name: 'HTML' },
-        { name: 'CSS' },
-        { name: 'Rest-Api' },
+        { name: 'JavaScript', image: 'assets/icons/JavaScript.svg' },
+        { name: 'HTML', image: 'assets/icons/HTML.svg' },
+        { name: 'CSS', image: 'assets/icons/CSS.svg' },
+        { name: 'Rest-Api', image: 'assets/icons/JavaScript.svg' },
       ],
       description: 'Eine Pokémon-Enzyklopädie mit Daten aus der PokéAPI.',
       githubLink: 'https://github.com/IhrGithubLink/Pokedex',
@@ -98,5 +102,13 @@ export class ProjectsComponent {
   closeOverlay() {
     this.selectedProject = null;
     this.imgPathProject = '';
+  }
+
+  goToNextProject() {
+    if (!this.projects?.length || !this.selectedProject) return;
+    
+    const currentIndex = this.projects.findIndex(p => p === this.selectedProject);
+    const nextIndex = (currentIndex + 1) % this.projects.length;
+    this.selectedProject = this.projects[nextIndex];
   }
 }
