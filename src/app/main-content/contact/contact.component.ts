@@ -16,4 +16,8 @@ export class ContactComponent {
     message: '',
     privacy: false,
   };
+
+  onSubmit() {
+    console.log("Läuft");
+  }
 }
