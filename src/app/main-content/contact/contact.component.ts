@@ -1,5 +1,6 @@
 import { CommonModule, NgFor } from '@angular/common';
-import { Component, ViewChild } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
@@ -11,6 +12,8 @@ import { FormsModule, NgForm } from '@angular/forms';
 })
 export class ContactComponent {
   @ViewChild('contactForm') contactForm!: NgForm;
+
+  http = inject(HttpClient);
 
   contactData = {
     name: '',
