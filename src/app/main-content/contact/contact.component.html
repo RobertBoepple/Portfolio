@@ -20,7 +20,7 @@
           <label for="name">Name</label>
           <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" id="name" required placeholder="Your name goes here"/>
           @if (!name.valid && name.touched) {
-            <span>Invalid name</span>
+            <span>Oops! It seems your name is missing</span>
           }
           <span></span>
         </div>
@@ -28,14 +28,14 @@
             <label for="email">Email</label>
             <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email" id="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="Your email goes here"/>
             @if (!email.valid && email.touched) {
-              <span>Invalid Email</span>
+              <span>Hoppla! Your email is required</span>
             }
         </div>
         <div>
             <label for="message">Message</label>
             <textarea #message="ngModel"  [(ngModel)]="contactData.message" name="message" type="text" id="message" required minlength="4" placeholder="Your message goes here"></textarea>
             @if (!message.valid && message.touched) {
-              <span>Invalid message</span>
+              <span>What do you need to develop?</span>
             }
         </div>
       </div>
