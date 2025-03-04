@@ -14,11 +14,11 @@
     </div>
   </div>
   <div class="contact-form">
-    <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
       <div class="input-container">
         <div>
           <label for="name">Name</label>
-          <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" required placeholder="Your name goes here"/>
+          <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" id="name" required placeholder="Your name goes here"/>
           @if (!name.valid && name.touched) {
             <span>Invalid name</span>
           }
@@ -26,14 +26,14 @@
         </div>
         <div>
             <label for="email">Email</label>
-            <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="Your email goes here"/>
+            <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email" id="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="Your email goes here"/>
             @if (!email.valid && email.touched) {
               <span>Invalid Email</span>
             }
         </div>
         <div>
             <label for="message">Message</label>
-            <textarea #message="ngModel"  [(ngModel)]="contactData.message" type="text" id="message" required minlength="4" placeholder="Your message goes here"></textarea>
+            <textarea #message="ngModel"  [(ngModel)]="contactData.message" name="message" type="text" id="message" required minlength="4" placeholder="Your message goes here"></textarea>
             @if (!message.valid && message.touched) {
               <span>Invalid message</span>
             }

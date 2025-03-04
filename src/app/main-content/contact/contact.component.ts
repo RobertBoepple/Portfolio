@@ -13,7 +13,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 export class ContactComponent {
   @ViewChild('contactForm') contactForm!: NgForm;
 
-  http = inject(HttpClient);
+  http = inject(HttpClient)
 
   contactData = {
     name: '',
