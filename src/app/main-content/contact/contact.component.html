@@ -14,7 +14,7 @@
     </div>
   </div>
   <div class="contact-form">
-    <form (ngSubmit)="onSubmit()">
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
       <div class="input-container">
         <div>
           <label for="name">Name</label>
