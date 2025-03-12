@@ -54,6 +54,8 @@ form {
   border-bottom: 1px solid #3dcfb6;
   width: 100%;
   > div {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     display: flex;
     gap: 16px;
@@ -83,6 +85,9 @@ form {
       &:hover {
         background-color: rgba(255, 255, 255, 0);
       }
+    }
+    > span {
+      color: rgba(236, 123, 123, 1);
     }
   }
 }
