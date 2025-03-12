@@ -67,3 +67,12 @@
     </form>
   </div>
 </div>
+@if (showOverlay) {
+  <div class="overlay">
+    <div class="overlay-content">
+      <h3>Vielen Dank für deine Nachricht!</h3>
+      <p>Ich werde mich so schnell wie möglich bei dir melden.</p>
+      <button (click)="closeOverlay()">Schließen</button>
+    </div>
+  </div>
+}

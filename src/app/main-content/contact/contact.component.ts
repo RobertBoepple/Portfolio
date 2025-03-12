@@ -1,4 +1,4 @@
-import { CommonModule, NgFor } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
@@ -13,7 +13,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 export class ContactComponent {
   @ViewChild('contactForm') contactForm!: NgForm;
 
-  http = inject(HttpClient)
+  http = inject(HttpClient);
 
   contactData = {
     name: '',
@@ -23,6 +23,7 @@ export class ContactComponent {
   };
 
   mailTest = true;
+  showOverlay = true;
 
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
@@ -40,7 +41,7 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            this.showOverlay = true;
             ngForm.resetForm();
           },
           error: (error) => {
@@ -49,8 +50,12 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      this.showOverlay = true;
       ngForm.resetForm();
     }
+  }
+
+  closeOverlay(): void {
+    this.showOverlay = false;
   }
 }
