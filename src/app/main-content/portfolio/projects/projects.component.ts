@@ -38,7 +38,7 @@ export class ProjectsComponent {
         'Ein Kanban-Board Projekt für Aufgabenverwaltung und Teamkollaboration.',
       githubLink: 'https://github.com/IhrGithubLink/Join',
       liveLink: 'https://IhreLiveDemoURL/Join',
-      imgPath: 'assets/img/join.jpg',
+      imgPath: 'assets/img/join 1.jpg',
       index: 0,
     },
     {
@@ -52,7 +52,7 @@ export class ProjectsComponent {
       description: 'Ein JavaScript-basiertes Jump-and-Run Spiel.',
       githubLink: 'https://github.com/IhrGithubLink/ElPolloLoco',
       liveLink: 'https://IhreLiveDemoURL/ElPolloLoco',
-      imgPath: 'assets/img/El Pollo Loco.png',
+      imgPath: 'assets/img/El Pollo Loco 1.png',
       index: 1,
     },
     {
@@ -67,7 +67,7 @@ export class ProjectsComponent {
       description: 'Eine Pokémon-Enzyklopädie mit Daten aus der PokéAPI.',
       githubLink: 'https://github.com/IhrGithubLink/Pokedex',
       liveLink: 'https://IhreLiveDemoURL/Pokedex',
-      imgPath: 'assets/img/Pokedex.png',
+      imgPath: 'assets/img/Pokedex 1.png',
       index: 2,
     },
   ];
