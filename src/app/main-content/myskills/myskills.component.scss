@@ -67,6 +67,7 @@
   > button {
     font-family: "Karla";
     font-size: 1.125em;
+    color: #d9d9d9;
     background-color: #3dcfb61a;
     width: 122px;
     border: 1px solid #ffffff;
@@ -75,8 +76,8 @@
     cursor: pointer;
 
     &:hover {
-      border-color: #3dcfb6;
-      color: white;
+      background-color: #08463b3f;
+        transform: scale(1.05);
     }
   }
 }
