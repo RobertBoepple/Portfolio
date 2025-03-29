@@ -56,7 +56,16 @@
     "messageText": "Was möchten Sie entwickeln?",
     "namePlaceholder": "Ihr Name",
     "emailPlaceholder": "Ihre E-Mail",
-    "messagePlaceholder": "Ihre Nachricht"
+    "messagePlaceholder": "Ihre Nachricht",
+    "privacyText1": "Ich habe die",
+    "privacyText2": "Datenschutzbestimmungen",
+    "privacyText3": "gelesen und stimme der Verarbeitung meiner Daten gemäß den Angaben zu.",
+    "privayError": "Bitte akzeptieren Sie die Datenschutzrichtlinie.",
+    "submitButton": "Nachricht senden",
+    "overlayHeadline": "Vielen Dank für Ihre Nachricht!",
+    "overlayText": "Ich werde mich so schnell wie möglich bei Ihnen melden.",
+    "overlayButton": "Schließen"
+
     
   }
 

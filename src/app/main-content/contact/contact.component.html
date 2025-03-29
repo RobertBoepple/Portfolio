@@ -52,13 +52,13 @@
             <label for="privacy"></label>
           </div>
           <div class="privacy-container">
-            <p>I´ve read <a href="privacy-policy">privacy-policy</a>
-              and agree to the processing of my data as outlined.   
+            <p>{{ 'contact.privacyText1' | translate }} <a href="privacy-policy">{{ 'contact.privacyText2' | translate }} </a>
+              {{ 'contact.privacyText3' | translate }}   
             </p>
           </div>
         </div>
         @if (privacyInput.invalid && contactForm.submitted) {
-          <span>Please accept the privacy policy</span>
+          <span>{{ 'contact.privacyError' | translate }} </span>
         }
       </div>
       <button type="submit" class="btn-container">
@@ -70,9 +70,9 @@
 @if (showOverlay) {
   <div class="overlay">
     <div class="overlay-content">
-      <h3>Vielen Dank für deine Nachricht!</h3>
-      <p>Ich werde mich so schnell wie möglich bei dir melden.</p>
-      <button (click)="closeOverlay()">Schließen</button>
+      <h3>{{ 'contact.overlayHeadline' | translate }}</h3>
+      <p>{{ 'contact.overlayText' | translate }}</p>
+      <button (click)="closeOverlay()">{{ 'contact.overlayButton' | translate }}</button>
     </div>
   </div>
 }
