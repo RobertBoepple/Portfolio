@@ -40,6 +40,25 @@
     "title": "Portfolio",
     "projects": "Featured Projects",
     "description": "Explore a selection of my work here - interact with projects to see my skills in action"
+  },
+  "contact": {
+    "title": "Contact me",
+    "description": "Let´s work together",
+    "subtitle": "Got a problem to solve",
+    "subtext": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "subtext2": "Need a Frontend developer ?",
+    "subtext3": " Let´s talk!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "nameText": "Oops! It seems your name is missing",
+    "emailText": "Hoppla! Your email is required",
+    "messageText": "What do you need to develop?",
+    "namePlaceholder": "Your name goes here",
+    "emailPlaceholder": "Your email goes here",
+    "messagePlaceholder": "Your message goes here"
+    
+
   }
   
 

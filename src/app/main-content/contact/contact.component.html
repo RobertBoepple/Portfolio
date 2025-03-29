@@ -1,41 +1,41 @@
 <div class="contact-container">
   <div class="contact-text">
     <div class="headline">
-      <span>Contact me</span>
-      <h2>Let´s work together</h2>
+      <span>{{ 'contact.title' | translate }}</span>
+      <h2>{{ 'contact.description' | translate }}</h2>
     </div>
     <div class="sub-text">
-      <span>Got a problem to solve</span>
+      <span>{{ 'contact.subtitle' | translate }}</span>
       <p>
-        Contact me through this form, I am interested in hearing from you,
-        knowing your ideas and contributing to your projects with my work.
+        {{ 'contact.subtext' | translate }}
       </p>
-      <p>Need a Frontend developer ?<span> Let´s talk!</span></p>
+      <br>
+      <p>{{ 'contact.subtext2' | translate }}<span>{{ 'contact.subtext3' | translate }} </span></p>
     </div>
   </div>
   <div class="contact-form">
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
       <div class="input-container">
         <div>
-          <label for="name">Name</label>
-          <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" id="name" required placeholder="Your name goes here"/>
+          <label for="name">{{ 'contact.name' | translate }}</label>
+          <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" id="name" required placeholder="{{ 'contact.namePlaceholder' | translate }}"/>
           @if (!name.valid && name.touched) {
-            <span>Oops! It seems your name is missing</span>
+            <span>{{ 'contact.nameText' | translate }}</span>
           }
           <span></span>
         </div>
         <div>
-            <label for="email">Email</label>
-            <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email" id="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="Your email goes here"/>
+            <label for="email">{{ 'contact.email' | translate }}</label>
+            <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email" id="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="{{ 'contact.emailPlaceholder' | translate }}"/>
             @if (!email.valid && email.touched) {
-              <span>Hoppla! Your email is required</span>
+              <span>{{ 'contact.emailText' | translate }}</span>
             }
         </div>
         <div>
-            <label for="message">Message</label>
-            <textarea #message="ngModel"  [(ngModel)]="contactData.message" name="message" type="text" id="message" required minlength="4" placeholder="Your message goes here"></textarea>
+            <label for="message">{{ 'contact.message' | translate }}</label>
+            <textarea #message="ngModel"  [(ngModel)]="contactData.message" name="message" type="text" id="message" required minlength="4" placeholder="{{ 'contact.messagePlaceholder' | translate }}"></textarea>
             @if (!message.valid && message.touched) {
-              <span>What do you need to develop?</span>
+              <span>{{ 'contact.Text' | translate }}</span>
             }
         </div>
       </div>

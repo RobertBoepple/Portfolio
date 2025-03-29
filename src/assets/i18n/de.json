@@ -40,5 +40,24 @@
     "title": "Portfolio",
     "projects": "Meine Projekte",
     "description": "Entdecken Sie hier eine Auswahl meiner Arbeiten - interagieren Sie mit den Projekten, um die Projekte zu testen."
+  },
+  "contact" :{
+    "title": "Schreiben Sie mir",
+    "description": "Lassen Sie uns zusammenarbeiten",
+    "subtitle": "Haben Sie ein Problem zu lösen",
+    "subtext": "Schreiben Sie mir gerne mit­hilfe dieses Formulars. Ich freue mich, von Ihnen zu hören, Ihre Ideen kennen zu lernen und mit meiner Arbeit zu Ihrem Projekt beizutragen.",
+    "subtext2": "Sie brauchen einen Frontend Developer ?",
+    "subtext3": "Sprechen wir darüber!",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "nameText": "Ups ! Es scheint, dass Ihr Name fehlt",
+    "emailText": "Hoppla! Ihre E-Mail ist erforderlich",
+    "messageText": "Was möchten Sie entwickeln?",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "Ihre E-Mail",
+    "messagePlaceholder": "Ihre Nachricht"
+    
   }
+
 }
