@@ -41,6 +41,13 @@
     "projects": "Meine Projekte",
     "description": "Entdecken Sie hier eine Auswahl meiner Arbeiten - interagieren Sie mit den Projekten, um die Projekte zu testen."
   },
+  "quotes": {
+    "quote1": "Robert hat maßgeblich zum Erfolg unseres Projekts beigetragen, indem er durch seine Zuverlässigkeit und Pünktlichkeit stets die gesetzten Fristen eingehalten hat. Seine präzise und sorgfältige Arbeitsweise sowie sein Enthusiasmus und seine Lernbereitschaft waren entscheidend für die Qualität der Ergebnisse. Darüber hinaus zeigte er ein hohes Verantwortungsbewusstsein und arbeitete stets selbstständig, während er gleichzeitig die Teamarbeit durch seine respektvolle und konstruktive Zusammenarbeit unterstützte. Seine interdisziplinären Fähigkeiten und sein Engagement spielten eine Schlüsselrolle für den Erfolg des Projekts.",
+    "quote2": "Robert war unserem Projekt stets voll und ganz verpflichtet. Er erledigte seine Aufgaben sehr sorgfältig und selbstständig und bewies dabei ein ausgezeichnetes Zeitmanagement. Mit seinem Blick für Details stellte er sicher, dass nichts übersehen wurde. Auch in stressigen Phasen blieb er stets positiv und brachte gute Laune ins Team. Mit seinem Einfühlungsvermögen und seiner Hilfsbereitschaft war er eine wichtige Stütze für die Moral im Team. Seine große Entschlossenheit trug maßgeblich zum Erfolg des Projekts bei.",
+    "quote3": "Robert war ein großartiger Teamkollege, der sowohl persönlich als auch fachlich eine Bereicherung für unser Team war. Seine ruhige und analytische Art, verbunden mit seinen exzellenten Fähigkeiten zur Problemlösung und seiner Bereitschaft, sich den komplexesten Aufgaben zu stellen, machten ihn zu einem unverzichtbaren Bestandteil unseres Projekts. Auch außerhalb der Gruppenarbeit hatte er stets ein offenes Ohr und stand immer zur Verfügung, um die Probleme der Kollegen zu lösen. Mit seiner positiven Ausstrahlung und seinen ausgeprägten Kommunikationsfähigkeiten verlief das Gruppenprojekt jederzeit äußerst reibungslos und angenehm."
+    
+
+  },
   "contact" :{
     "title": "Schreiben Sie mir",
     "description": "Lassen Sie uns zusammenarbeiten",
