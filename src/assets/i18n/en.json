@@ -73,7 +73,20 @@
     "overlayButton": "Close"
     
 
-  }
-  
-
+  },
+  "privacy": {
+    "title" : "Legal Notice",
+    "subtitle" : "Information according to § 5 DDG",
+    "representedBy" : "Represented by",
+    "contact" : "Contact",
+    "disclaimerHeadline" : "Disclaimer",
+    "disclaimerText" : "The contents of our pages were created with great care. However, we cannot assume any liability for the accuracy, completeness, and timeliness of the content. As a service provider, we are responsible for our own content on these pages according to general laws, as per § 7 Abs.1 DDG. According to §§ 8 to 10 DDG, we are not obliged to monitor transmitted or stored external information or to investigate circumstances indicating illegal activity. Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the point in time when a specific infringement is known. Upon becoming aware of such legal violations, we will remove this content immediately.",
+    "disclaimLinkHeadline" : "Liability for Links",
+    "disclaimLinkText" : "Our offer contains links to external websites of third parties, over whose content we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not recognizable at the time of linking. A permanent content control of the linked pages is, however, not reasonable without concrete evidence of a violation of the law. If we become aware of any infringements, we will remove such links immediately.",
+    "copyrightHeadline" : "Copyright",
+    "copyrightText" : "The content and works created by the site operators on these pages are subject to German copyright law. The duplication, editing, distribution, and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. Upon becoming aware of legal violations, we will remove such content immediately.",
+    "privacyPolicyHeadline" : "Privacy Policy",
+    "privacyPolicyText" : "The use of our website is generally possible without providing any personal data. If personal data (such as name, address or email addresses) is collected on our website, this is always done on a voluntary basis wherever possible. This data will not be passed on to third parties without your express consent. We would like to point out that data transmission over the Internet (e.g. when communicating by email) can have security gaps. Complete protection of data from access by third parties is not possible. The use of contact data published as part of the imprint obligation by third parties to send unsolicited advertising and information materials is hereby expressly prohibited. The operators of the website expressly reserve the right to take legal action in the event of unsolicited advertising information being sent, for example through spam emails.",
+    "generatedBy": "Website imprint created by"
+}
 }
