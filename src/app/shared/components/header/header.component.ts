@@ -16,4 +16,9 @@ export class HeaderComponent {
     const language = event.target.checked ? 'de' : 'en';
     this.translationService.switchLanguage(language);
   }
+  isMenuOpen = false;
+
+toggleMenu() {
+  this.isMenuOpen = !this.isMenuOpen;
+}
 }
