@@ -34,9 +34,9 @@ $animationLength: 25s;
     > h2 {
       font-size: 2em;
     }
-    
+
     > h1 {
-      font-size: 5em; 
+      font-size: 5em;
     }
   }
 }
@@ -140,22 +140,22 @@ $animationLength: 25s;
       color: #3dcfb6;
     }
   }
+
   @media screen and (max-width: 768px) {
     > .mail {
       transform: none;
-      position: static; 
-      bottom: auto; 
-  
+      position: static;
+
       .mail-text {
         display: none;
       }
-  
+
       .mail-icon {
         display: block;
       }
     }
   }
-  
+
   > a {
     > img {
       transition: all 125ms ease-in-out;
@@ -181,6 +181,7 @@ $animationLength: 25s;
   transform: rotate(-3deg);
   backdrop-filter: blur(4px);
   overflow: hidden;
+
   &:after {
     content: "";
     position: absolute;
@@ -208,34 +209,10 @@ $animationLength: 25s;
   color: #3dcfb6;
   min-width: max-content;
 }
+
 @keyframes scroll {
   to {
     transform: translateX(-100%);
   }
 }
 
-@media screen and (max-width: 768px) {
-  > .mail {
-    transform: none; 
-    position: static; 
-    bottom: auto; 
-
-    .mail-text {
-      display: none;
-    }
-
-    .mail-icon {
-      display: block;
-    }
-  }
-}
-
-> a {
-  > img {
-    transition: all 125ms ease-in-out;
-    &:hover {
-      transform: scale(1.15);
-      filter: drop-shadow(-2px 2px 1px #304440);
-    }
-  }
-}
