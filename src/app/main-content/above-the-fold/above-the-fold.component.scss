@@ -39,6 +39,25 @@ $animationLength: 25s;
       font-size: 5em;
     }
   }
+  @media screen and (max-width: 470px) {
+    > h2 {
+      font-size: 1.5em;
+    }
+
+    > h1 {
+      font-size: 3em;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    > h2 {
+      font-size: 1.5em;
+    }
+
+    > h1 {
+      font-size: 2.5em;
+    }
+  }
+  
 }
 
 .action-btn {
@@ -67,6 +86,7 @@ $animationLength: 25s;
       }
     }
   }
+
 }
 
 .nav-sozial-links {
@@ -213,6 +233,11 @@ $animationLength: 25s;
 @keyframes scroll {
   to {
     transform: translateX(-100%);
+  }
+}
+@media (max-width: 380px) {
+  .action-btn .btn > #contact {
+    display: none;
   }
 }
 
