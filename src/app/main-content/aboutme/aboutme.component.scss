@@ -6,7 +6,10 @@
     justify-content: space-between;
     align-self: center;
     padding: 64px 96px;
-    
+    @media screen and (max-width: 920px) {
+        padding: 32px 16px;
+        height: auto;
+    }
 }
 
 .wrapper-about-me {
@@ -14,6 +17,12 @@
     display: flex;
     gap: 6em;
     justify-content: space-between;
+    @media screen and (max-width: 920px) {
+        flex-direction: column;
+        align-items: center;
+        gap : 1em;
+        
+    }
 }
 
 .wrapper-about-me-text{
@@ -22,6 +31,10 @@
     justify-content: flex-end;
     gap: 0.75em;
     height: 708px;
+     @media screen and (max-width: 920px) {
+        height: auto;
+        
+    }
 }
 
 .image-container {
@@ -56,6 +69,29 @@
         font-size: 4em;
         
     }
+     @media screen and (max-width: 1214px) {
+    > h2 {
+      font-size: 2em;
+    }
+
+    > span, p {
+      font-size: 1em;
+    }
+  }
+   @media screen and (max-width: 1090px) {
+    > h2 {
+      font-size: 1.5em;
+    }
+
+    > span, p {
+      font-size: 0.85em;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    > h2 {
+      font-size: 1em;
+    }
+  }
 }
 
 .about-me-headline{
@@ -63,6 +99,13 @@
     font-family:"Karla";
     font-weight: 500;
     font-size: 1.5em;
+     @media screen and (max-width: 1214px) {
+      font-size: 1em;   
+  }
+   @media screen and (max-width: 920px) {
+        display: none;
+        
+    }
 }
 
 .icon-text {
@@ -70,6 +113,11 @@
     gap: 1em;
     > img{
     height: 32px;
+    }
+    @media screen and (max-width: 470px) {
+        > img{
+           display: none;
+        }
     }
     
 }
