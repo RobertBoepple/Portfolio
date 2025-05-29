@@ -217,6 +217,9 @@ $animationLength: 25s;
       rgba(28, 28, 28, 1)
     );
   }
+  @media screen and (max-width: 550px) {
+    display: none;
+}
 }
 
 .banner-content {

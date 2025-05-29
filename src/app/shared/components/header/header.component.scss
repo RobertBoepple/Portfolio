@@ -30,7 +30,9 @@ a {
   align-items: center;
   cursor: pointer;
   z-index: 99;
- 
+    @media (max-width: 549px){
+      font-size: 0.8em;
+     }
 }
 
 /* From Uiverse.io by gharsh11032000 */
@@ -123,6 +125,7 @@ a {
     gap: 2em;
 
     // Mobile-Ansicht
+
     @media (max-width: 768px) {
       position: absolute;
       top: 72%;
@@ -130,7 +133,6 @@ a {
       right: 0;
       background: linear-gradient(35deg, #1C1C1C 43%, #08463B 100%);
       flex-direction: column;
-      align-items: flex-end;
       padding: 1em 2em;
       gap: 1.5em;
       display: none;
@@ -140,6 +142,10 @@ a {
         display: flex;
       }
     }
+     @media (max-width: 549px){
+      gap: 0.5em;
+      padding: 1em 0;
+     }
   }
 @media (max-width: 768px) {
     flex-direction: row-reverse;
