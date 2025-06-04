@@ -26,7 +26,7 @@ export class ContactComponent {
   };
 
   mailTest = true;
-  showOverlay = true;
+  showOverlay = false;
 
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
