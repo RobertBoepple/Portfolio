@@ -34,6 +34,9 @@
     font-size: 1.125em;
     font-weight: 400;
     color: #3dcfb6;
+    @media (max-width: 768px) {
+        display: none; /* Versteckt den mittleren Inhalt auf kleineren Bildschirmen */
+    }
 }
 
 .footer-content-right{
