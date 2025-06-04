@@ -1,6 +1,9 @@
 .portfolio-container {
     padding: 64px 96px;
-
+@media screen and (max-width: 770px) {
+    padding: 34px 26px;
+        
+    }
 }
 
 .headline {
@@ -36,5 +39,16 @@
         font-size: 18px;
         max-width: 456px;
         text-align: justify;
+    }
+    @media screen and (max-width: 1214px) {
+        > h2 {
+            font-size: 2em;
+        }
+        > p {
+            font-size: 1em;
+        }
+        > span {
+            font-size: 1em;
+        }
     }
 }
