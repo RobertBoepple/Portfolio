@@ -90,6 +90,7 @@ $animationLength: 25s;
 }
 
 .nav-sozial-links {
+  max-width: 1920px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -132,6 +133,7 @@ $animationLength: 25s;
 }
 
 .sozial-links {
+  max-width: 1920px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,14 +193,16 @@ $animationLength: 25s;
 }
 
 .banner {
+  max-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: absolute;
   gap: 56px;
   bottom: 55px;
-  left: -100px;
-  right: -100px;
+  left: -15px;
+  right: -15px;
   height: 62px;
   background-color: rgba(56, 61, 64, 0.45);
   transform: rotate(-3deg);
@@ -220,12 +224,48 @@ $animationLength: 25s;
       rgba(28, 28, 28, 1)
     );
   }
+
+  /* Tablet */
+  @media screen and (max-width: 768px) {
+    gap: 32px;
+    height: 50px;
+    bottom: 40px;
+    left: -10px;
+    right: -10px;
+    transform: rotate(-2deg);
+  }
+
+  /* Mobile */
   @media screen and (max-width: 550px) {
-    display: none;
-}
+    gap: 24px;
+    height: 40px;
+    bottom: 30px;
+    left: -5px;
+    right: -5px;
+    transform: rotate(-1deg);
+    
+    &:after {
+      background: linear-gradient(
+        to right,
+        rgba(28, 28, 28, 1),
+        rgba(28, 28, 28, 0) 15%,
+        rgba(28, 28, 28, 0) 85%,
+        rgba(28, 28, 28, 1)
+      );
+    }
+  }
+
+  /* Very small screens */
+  @media screen and (max-width: 320px) {
+    gap: 16px;
+    height: 35px;
+    bottom: 20px;
+    transform: rotate(-0.5deg);
+  }
 }
 
 .banner-content {
+  width: 100%;
   animation: scroll $animationLength linear infinite;
   display: flex;
   align-items: center;
@@ -234,6 +274,24 @@ $animationLength: 25s;
   font-size: 2em;
   color: #3dcfb6;
   min-width: max-content;
+
+  /* Tablet */
+  @media screen and (max-width: 768px) {
+    gap: 32px;
+    font-size: 1.75em;
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 550px) {
+    gap: 24px;
+    font-size: 1.5em;
+  }
+
+  /* Very small screens */
+  @media screen and (max-width: 320px) {
+    gap: 16px;
+    font-size: 1.25em;
+  }
 }
 
 @keyframes scroll {
