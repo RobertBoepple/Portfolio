@@ -35,7 +35,7 @@
             <label for="message">{{ 'contact.message' | translate }}</label>
             <textarea #message="ngModel"  [(ngModel)]="contactData.message" name="message" type="text" id="message" required minlength="4" placeholder="{{ 'contact.messagePlaceholder' | translate }}"></textarea>
             @if (!message.valid && message.touched) {
-              <span>{{ 'contact.Text' | translate }}</span>
+              <span>{{ 'contact.messageText' | translate }}</span>
             }
         </div>
       </div>
