@@ -239,7 +239,7 @@ $animationLength: 25s;
   @media screen and (max-width: 550px) {
     gap: 24px;
     height: 40px;
-    bottom: 30px;
+    bottom: 200px;
     left: -5px;
     right: -5px;
     transform: rotate(-1deg);
@@ -259,7 +259,7 @@ $animationLength: 25s;
   @media screen and (max-width: 320px) {
     gap: 16px;
     height: 35px;
-    bottom: 20px;
+    bottom: 220px;
     transform: rotate(-0.5deg);
   }
 }
