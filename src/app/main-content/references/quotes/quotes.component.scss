@@ -53,7 +53,7 @@
 .list li {
   list-style-type: none;
   width: 660px;
-  height: 380px;
+  // height: 380px;
   opacity: 0.45;
   position: absolute;
   left: 50%;
@@ -93,6 +93,8 @@
 }
 
 .quote {
+  display: flex;
+  gap: 1em;
   height: 80%;
   margin: 32px;
   display: flex;

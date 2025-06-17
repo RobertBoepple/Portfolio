@@ -91,16 +91,18 @@ $animationLength: 25s;
 
 .nav-sozial-links {
   max-width: 1920px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  bottom: 15px;
+  left: 0;
   padding: 0 96px;
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     padding: 0 24px;
   }
+
 }
 
 .bottom-nav {
@@ -139,6 +141,9 @@ $animationLength: 25s;
   align-items: center;
   gap: 24px;
   width: 24px;
+    @media screen and (max-width: 550px) {
+    flex-direction: row-reverse;
+}
 
   > .mail {
     font-size: 1.125em;
@@ -227,6 +232,7 @@ $animationLength: 25s;
 
   /* Tablet */
   @media screen and (max-width: 768px) {
+    display: none;
     gap: 32px;
     height: 50px;
     bottom: 40px;

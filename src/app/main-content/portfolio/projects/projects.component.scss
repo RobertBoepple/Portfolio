@@ -37,6 +37,7 @@
   height: 100%;
   transition: all 125ms ease-in-out;
   &:hover {
+    cursor: pointer;
     background-color: rgba(61, 207, 182, 0.3);
   }
   @media screen and (max-width: 1135px) {
