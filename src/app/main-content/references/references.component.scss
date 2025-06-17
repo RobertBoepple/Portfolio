@@ -1,4 +1,5 @@
 .references-container {
+    overflow: hidden;
     width: 100%;
     // padding: 64px 96px;
     display: flex;
@@ -14,6 +15,7 @@
     }
 }
 app-quotes {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;    
