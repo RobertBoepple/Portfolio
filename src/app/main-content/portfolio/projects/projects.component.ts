@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../../translation.service';
 
 interface Project {
   id: string;
   name: string;
   techStack: { name: string, image: string }[];
-  description: string;
+  descriptionKey: string;
   githubLink: string;
   liveLink: string;
   imgPath: string;
@@ -15,14 +17,17 @@ interface Project {
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
+  
   showArrowHover: { [key: number]: boolean } = {};
   imgPathProject: string = '';
   selectedProject: Project | null = null;
+
+  translate = inject(TranslationService);
 
   projects: Project[] = [
     {
@@ -34,8 +39,8 @@ export class ProjectsComponent {
         { name: 'CSS',image: 'assets/icons/CSS.svg' },
         { name: 'Firebase', image: 'assets/icons/Firebase.svg' },
       ],
-      description:
-        'Ein Kanban-Board Projekt für Aufgabenverwaltung und Teamkollaboration.',
+      descriptionKey:
+        'project-overlay.description-Join',
       githubLink: 'https://github.com/RobertBoepple/Join',
       liveLink: 'https://robert-boepple.de/Join/html',
       imgPath: 'assets/img/join 1.jpg',
@@ -49,10 +54,10 @@ export class ProjectsComponent {
          { name: 'HTML', image: 'assets/icons/HTML.svg' }, 
          { name: 'CSS', image: 'assets/icons/CSS.svg' }
         ],
-      description: 'Ein JavaScript-basiertes Jump-and-Run Spiel.',
+      descriptionKey: 'project-overlay.description-ElPolloLoco',
       githubLink: 'https://github.com/RobertBoepple/El-Pollo-Loco',
       liveLink: 'https://robert-boepple.de/El-Pollo-Loco',
-      imgPath: 'assets/img/El Pollo Loco 1.png',
+      imgPath: 'assets/img/El Pollo Loco 1.jpg',
       index: 1,
     },
     {
@@ -64,10 +69,10 @@ export class ProjectsComponent {
         { name: 'CSS', image: 'assets/icons/CSS.svg' },
         { name: 'Rest-Api', image: 'assets/icons/JavaScript.svg' },
       ],
-      description: 'Eine Pokémon-Enzyklopädie mit Daten aus der PokéAPI.',
+      descriptionKey: 'project-overlay.description-Pokedex',
       githubLink: 'https://github.com/RobertBoepple/pokedex',
       liveLink: 'https://robert-boepple.de/pokedex',
-      imgPath: 'assets/img/Pokedex 1.png',
+      imgPath: 'assets/img/Pokedex 1.jpg',
       index: 2,
     },
   ];
