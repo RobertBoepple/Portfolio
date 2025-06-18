@@ -25,11 +25,11 @@ export class ContactComponent {
     privacy: false,
   };
 
-  mailTest = true;
+  mailTest = false;
   showOverlay = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://robert-boepple.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

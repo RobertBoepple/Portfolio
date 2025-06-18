@@ -83,20 +83,15 @@ export class ProjectsComponent {
   }
 
   hoverProject(index: number) {
-    console.log('Hover Index:', index);
     const project = this.projects[index];
     if (project) {
-      console.log('Project found:', project);
-      console.log('Image path:', project.imgPath);
       this.imgPathProject = project.imgPath;
     }
   }
 
   openProjectDetails(project: Project) {
-    console.log('Opening project:', project);
     this.selectedProject = project;
     this.imgPathProject = project.imgPath;
-    console.log('Set image path to:', this.imgPathProject);
   }
 
   closeOverlay() {
