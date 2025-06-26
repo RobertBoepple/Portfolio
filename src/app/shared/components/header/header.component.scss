@@ -44,6 +44,25 @@
         padding: 1em 0;
       }
     }
+.menu-item {
+  position: relative;
+}
+
+.menu-item a:hover .dot {
+  opacity: 1;
+}
+    .dot {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      top: 28px;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      background-color: #3dcfb6;
+      opacity: 0;
+      transition: all 0.1s ease-in-out;
+    }
 
     .burger {
       display: none;

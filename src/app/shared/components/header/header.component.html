@@ -18,10 +18,27 @@
           <span>DE</span>
         </div>
       </label>
-      <a href="#aboutMe">{{ "menu.aboutMe" | translate }}</a>
-      <a href="#skills">{{ "menu.skills" | translate }}</a>
-      <a href="#projects">{{ "menu.projects" | translate }}</a>
+      <div class="menu-item">
+        <a href="#aboutMe" (click)="toggleMenu()"
+          >{{ "menu.aboutMe" | translate }}
+          <div class="dot"></div>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#skills" (click)="toggleMenu()">
+          {{ "menu.skills" | translate }}
+          <div class="dot"></div>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#projects" (click)="toggleMenu()">
+          {{ "menu.projects" | translate }}
+          <div class="dot"></div>
+        </a>
+      </div>
     </div>
-    <img src="../../../assets/img/mylogo/myLogo-full.png" alt="Logo" />
+    <a href="/"
+      ><img src="../../../assets/img/mylogo/myLogo-full.png" alt="Logo"
+    /></a>
   </div>
 </nav>
