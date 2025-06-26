@@ -27,7 +27,7 @@
         top: 72%;
         right: 0;
         width: 30%;
-        background: linear-gradient(35deg, #1C1C1C 43%, #08463B 100%);
+        background: linear-gradient(35deg, #1c1c1c 43%, #08463b 100%);
         flex-direction: column;
         padding: 1em 2em;
         gap: 1.5em;
@@ -74,7 +74,6 @@
   }
 }
 
-// Link-Styling
 a {
   font-family: "Fira Code";
   font-size: 1rem;
@@ -90,7 +89,6 @@ a {
   }
 }
 
-// Sprachumschalter
 .switch {
   font-family: "karla";
   position: relative;
@@ -153,4 +151,3 @@ a {
   content: "DE";
   transform: translateX(36px);
 }
-

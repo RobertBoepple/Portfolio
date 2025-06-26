@@ -13,13 +13,19 @@
 </div>
 <div class="nav-sozial-links">
   <div class="bottom-nav">
-    <a href="#aboutMe"><img src="../../../assets/icons/above-arrow.png" alt="" /></a>
+    <a href="#aboutMe"
+      ><img src="../../../assets/icons/above-arrow.png" alt=""
+    /></a>
     <div class="seperator"></div>
   </div>
   <div class="sozial-links">
     <a class="mail" href="mailto:robert.boepple@gmail.com">
       <span class="mail-text">robert.boepple&#64;gmail.com</span>
-      <img class="mail-icon" src="../../../assets/icons/mail.png" alt="E-Mail" />
+      <img
+        class="mail-icon"
+        src="../../../assets/icons/mail.png"
+        alt="E-Mail"
+      />
     </a>
     <a href="https://github.com/RobertBoepple"
       ><img src="../../../assets/icons/github.png" target="_blank" alt=""
@@ -32,13 +38,17 @@
       <div class="banner-content">
         @for (banner of banners; track $index) {
         <img src="../../../assets/icons/dot.png" alt="" />
-        <div><span>{{ "banner-content." + ($index+1) | translate }}</span></div>
+        <div>
+          <span>{{ "banner-content." + ($index + 1) | translate }}</span>
+        </div>
         }
       </div>
       <div class="banner-content">
         @for (banner of banners; track $index) {
         <img src="../../../assets/icons/dot.png" alt="" />
-        <div><span>{{ "banner-content." + ($index+1) | translate }}</span></div>
+        <div>
+          <span>{{ "banner-content." + ($index + 1) | translate }}</span>
+        </div>
         }
       </div>
     </div>

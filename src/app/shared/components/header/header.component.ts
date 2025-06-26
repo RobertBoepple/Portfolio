@@ -7,7 +7,7 @@ import { TranslationService } from '../../../translation.service';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   constructor(private translationService: TranslationService) {}
@@ -18,7 +18,7 @@ export class HeaderComponent {
   }
   isMenuOpen = false;
 
-toggleMenu() {
-  this.isMenuOpen = !this.isMenuOpen;
-}
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

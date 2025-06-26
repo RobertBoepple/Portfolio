@@ -57,7 +57,6 @@ $animationLength: 25s;
       font-size: 2.5em;
     }
   }
-  
 }
 
 .action-btn {
@@ -86,7 +85,6 @@ $animationLength: 25s;
       }
     }
   }
-
 }
 
 .nav-sozial-links {
@@ -101,7 +99,6 @@ $animationLength: 25s;
   @media screen and (max-width: 768px) {
     padding: 0 24px;
   }
-
 }
 
 .bottom-nav {
@@ -130,7 +127,7 @@ $animationLength: 25s;
   border: 1px solid #3dcfb6;
   @media screen and (max-width: 550px) {
     display: none;
-}
+  }
 }
 
 .sozial-links {
@@ -140,9 +137,9 @@ $animationLength: 25s;
   align-items: center;
   gap: 24px;
   width: 24px;
-    @media screen and (max-width: 550px) {
+  @media screen and (max-width: 550px) {
     flex-direction: row-reverse;
-}
+  }
 
   > .mail {
     font-size: 1.125em;
@@ -229,7 +226,6 @@ $animationLength: 25s;
     );
   }
 
-  /* Tablet */
   @media screen and (max-width: 768px) {
     display: none;
     gap: 32px;
@@ -240,7 +236,6 @@ $animationLength: 25s;
     transform: rotate(-2deg);
   }
 
-  /* Mobile */
   @media screen and (max-width: 550px) {
     gap: 24px;
     height: 40px;
@@ -248,7 +243,7 @@ $animationLength: 25s;
     left: -5px;
     right: -5px;
     transform: rotate(-1deg);
-    
+
     &:after {
       background: linear-gradient(
         to right,
@@ -260,7 +255,6 @@ $animationLength: 25s;
     }
   }
 
-  /* Very small screens */
   @media screen and (max-width: 320px) {
     gap: 16px;
     height: 35px;
@@ -280,19 +274,16 @@ $animationLength: 25s;
   color: #3dcfb6;
   min-width: max-content;
 
-  /* Tablet */
   @media screen and (max-width: 768px) {
     gap: 32px;
     font-size: 1.75em;
   }
 
-  /* Mobile */
   @media screen and (max-width: 550px) {
     gap: 24px;
     font-size: 1.5em;
   }
 
-  /* Very small screens */
   @media screen and (max-width: 320px) {
     gap: 16px;
     font-size: 1.25em;
@@ -309,4 +300,3 @@ $animationLength: 25s;
     display: none;
   }
 }
-

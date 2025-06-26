@@ -1,90 +1,78 @@
 .about-me-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-self: center;
-    padding: 64px 96px;
-    @media screen and (max-width: 920px) {
-        padding: 32px 16px;
-        height: auto;
-    }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  padding: 64px 96px;
+  @media screen and (max-width: 920px) {
+    padding: 32px 16px;
+    height: auto;
+  }
 }
 
 .wrapper-about-me {
-    
-    display: flex;
-    gap: 6em;
-    justify-content: space-between;
-    @media screen and (max-width: 1080px) {
-        flex-direction: column;
-        align-items: center;
-        gap : 1em;
-        
-    }
+  display: flex;
+  gap: 6em;
+  justify-content: space-between;
+  @media screen and (max-width: 1080px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
 }
 
-.wrapper-about-me-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 0.75em;
-    height: 708px;
-     @media screen and (max-width: 920px) {
-        height: auto;
-        
-    }
+.wrapper-about-me-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.75em;
+  height: 708px;
+  @media screen and (max-width: 920px) {
+    height: auto;
+  }
 }
 
 .image-container {
-    display: flex;
-    
-    >img {
-        object-fit: cover;
-        border-radius: 30px;
-        height: auto;
-        width: 100%;
-        max-height: 568px;
-        max-width: 568px;
-    }
+  display: flex;
+  > img {
+    object-fit: cover;
+    border-radius: 30px;
+    height: auto;
+    width: 100%;
+    max-height: 568px;
+    max-width: 568px;
+  }
 }
 
 .about-me-text {
-    display: flex;
-    flex-direction: column;
-    gap: 1.75em;
-    width: 100%;
-    max-width: 568px;
-    height: 100%;
-    border: 1px solid #3dcfb6;
-    border-radius: 30px;
-    padding: 2em;
-    color: #fff;
-    font-family: "Karla";
-    font-weight: 400;
-    > h2 {
-        color: #3dcfb6;
-        font-size: 4em;
-        
-    }
-     @media screen and (max-width: 1214px) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75em;
+  width: 100%;
+  max-width: 568px;
+  height: 100%;
+  border: 1px solid #3dcfb6;
+  border-radius: 30px;
+  padding: 2em;
+  color: #fff;
+  font-family: "Karla";
+  font-weight: 400;
+  > h2 {
+    color: #3dcfb6;
+    font-size: 4em;
+  }
+  @media screen and (max-width: 1214px) {
     > h2 {
       font-size: 2em;
     }
 
-    > span, p {
+    > span,
+    p {
       font-size: 1em;
     }
   }
-  //  @media screen and (max-width: 1090px) {
-  //   > h2 {
-  //     font-size: 1.5em;
-  //   }
 
-  //   > span, p {
-  //     font-size: 0.85em;
-  //   }
-  // }
   @media screen and (max-width: 470px) {
     > h2 {
       font-size: 1em;
@@ -92,32 +80,28 @@
   }
 }
 
-.about-me-headline{
-    color: #3dcfb6;
-    font-family:"Karla";
-    font-weight: 500;
-    font-size: 1.5em;
-     @media screen and (max-width: 1214px) {
-      font-size: 1em;   
+.about-me-headline {
+  color: #3dcfb6;
+  font-family: "Karla";
+  font-weight: 500;
+  font-size: 1.5em;
+  @media screen and (max-width: 1214px) {
+    font-size: 1em;
   }
-   @media screen and (max-width: 920px) {
-        display: none;
-        
-    }
+  @media screen and (max-width: 920px) {
+    display: none;
+  }
 }
 
 .icon-text {
-    display: flex;
-    gap: 1em;
-    > img{
+  display: flex;
+  gap: 1em;
+  > img {
     height: 32px;
+  }
+  @media screen and (max-width: 470px) {
+    > img {
+      display: none;
     }
-    @media screen and (max-width: 470px) {
-        > img{
-           display: none;
-        }
-    }
-    
+  }
 }
-
-

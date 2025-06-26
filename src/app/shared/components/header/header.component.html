@@ -1,16 +1,17 @@
 <nav class="menu-bar">
   <div class="menu-container">
-    <!-- Burger-Icon für mobile Ansicht -->
     <div class="burger" (click)="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
     </div>
-
-    <!-- Menü-Links -->
     <div class="menu-links" [class.open]="isMenuOpen">
       <label class="switch">
-        <input type="checkbox" id="languageToggle" (change)="toggleLanguage($event)" />
+        <input
+          type="checkbox"
+          id="languageToggle"
+          (change)="toggleLanguage($event)"
+        />
         <span class="slider"></span>
         <div>
           <span>EN</span>
@@ -21,9 +22,6 @@
       <a href="#skills">{{ "menu.skills" | translate }}</a>
       <a href="#projects">{{ "menu.projects" | translate }}</a>
     </div>
-
-    <!-- Logo -->
     <img src="../../../assets/img/mylogo/myLogo-full.png" alt="Logo" />
   </div>
 </nav>
-

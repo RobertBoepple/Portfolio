@@ -1,78 +1,114 @@
 <div class="contact-container">
   <div class="contact-text">
     <div class="headline">
-      <span>{{ 'contact.title' | translate }}</span>
-      <h2>{{ 'contact.description' | translate }}</h2>
+      <span>{{ "contact.title" | translate }}</span>
+      <h2>{{ "contact.description" | translate }}</h2>
     </div>
     <div class="sub-text">
-      <span>{{ 'contact.subtitle' | translate }}</span>
+      <span>{{ "contact.subtitle" | translate }}</span>
       <p>
-        {{ 'contact.subtext' | translate }}
+        {{ "contact.subtext" | translate }}
       </p>
-      <br>
-      <p>{{ 'contact.subtext2' | translate }}<span>{{ 'contact.subtext3' | translate }} </span></p>
+      <br />
+      <p>
+        {{ "contact.subtext2" | translate
+        }}<span>{{ "contact.subtext3" | translate }} </span>
+      </p>
     </div>
   </div>
   <div class="contact-form">
     <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
       <div class="input-container">
         <div>
-          <label for="name">{{ 'contact.name' | translate }}</label>
-          <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" id="name" required placeholder="{{ 'contact.namePlaceholder' | translate }}"/>
+          <label for="name">{{ "contact.name" | translate }}</label>
+          <input
+            #name="ngModel"
+            [(ngModel)]="contactData.name"
+            name="name"
+            type="text"
+            id="name"
+            required
+            placeholder="{{ 'contact.namePlaceholder' | translate }}"
+          />
           @if (!name.valid && name.touched) {
-            <span>{{ 'contact.nameText' | translate }}</span>
+          <span>{{ "contact.nameText" | translate }}</span>
           }
           <span></span>
         </div>
         <div>
-            <label for="email">{{ 'contact.email' | translate }}</label>
-            <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email" id="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="{{ 'contact.emailPlaceholder' | translate }}"/>
-            @if (!email.valid && email.touched) {
-              <span>{{ 'contact.emailText' | translate }}</span>
-            }
+          <label for="email">{{ "contact.email" | translate }}</label>
+          <input
+            #email="ngModel"
+            [(ngModel)]="contactData.email"
+            name="email"
+            type="email"
+            id="email"
+            required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            placeholder="{{ 'contact.emailPlaceholder' | translate }}"
+          />
+          @if (!email.valid && email.touched) {
+          <span>{{ "contact.emailText" | translate }}</span>
+          }
         </div>
         <div>
-            <label for="message">{{ 'contact.message' | translate }}</label>
-            <textarea #message="ngModel"  [(ngModel)]="contactData.message" name="message" type="text" id="message" required minlength="4" placeholder="{{ 'contact.messagePlaceholder' | translate }}"></textarea>
-            @if (!message.valid && message.touched) {
-              <span>{{ 'contact.messageText' | translate }}</span>
-            }
+          <label for="message">{{ "contact.message" | translate }}</label>
+          <textarea
+            #message="ngModel"
+            [(ngModel)]="contactData.message"
+            name="message"
+            type="text"
+            id="message"
+            required
+            minlength="4"
+            placeholder="{{ 'contact.messagePlaceholder' | translate }}"
+          ></textarea>
+          @if (!message.valid && message.touched) {
+          <span>{{ "contact.messageText" | translate }}</span>
+          }
         </div>
       </div>
       <div class="validate-container">
         <div class="validate">
           <div>
-            <input #privacyInput="ngModel"
-              [(ngModel)]="contactData.privacy" 
-              type="checkbox" 
+            <input
+              #privacyInput="ngModel"
+              [(ngModel)]="contactData.privacy"
+              type="checkbox"
               id="privacy"
-              name="privacy" 
+              name="privacy"
               required
             />
             <label for="privacy"></label>
           </div>
           <div class="privacy-container">
-            <p>{{ 'contact.privacyText1' | translate }} <a href="privacy-policy">{{ 'contact.privacyText2' | translate }} </a>
-              {{ 'contact.privacyText3' | translate }}   
+            <p>
+              {{ "contact.privacyText1" | translate }}
+              <a href="privacy-policy"
+                >{{ "contact.privacyText2" | translate }}
+              </a>
+              {{ "contact.privacyText3" | translate }}
             </p>
           </div>
         </div>
         @if (privacyInput.invalid && contactForm.submitted) {
-          <span>{{ 'contact.privacyError' | translate }} </span>
+        <span>{{ "contact.privacyError" | translate }} </span>
         }
       </div>
       <button type="submit" class="btn-container">
-        <span>{{ 'contact.submitButton' | translate }}</span> 
+        <span>{{ "contact.submitButton" | translate }}</span>
       </button>
     </form>
   </div>
 </div>
 @if (showOverlay) {
-  <div class="overlay">
-    <div class="overlay-content">
-      <h3>{{ 'contact.overlayHeadline' | translate }}</h3>
-      <p>{{ 'contact.overlayText' | translate }}</p>
-      <button (click)="closeOverlay()">{{ 'contact.overlayButton' | translate }}</button>
-    </div>
+<div class="overlay">
+  <div class="overlay-content">
+    <h3>{{ "contact.overlayHeadline" | translate }}</h3>
+    <p>{{ "contact.overlayText" | translate }}</p>
+    <button (click)="closeOverlay()">
+      {{ "contact.overlayButton" | translate }}
+    </button>
   </div>
+</div>
 }
