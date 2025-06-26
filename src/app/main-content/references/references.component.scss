@@ -1,4 +1,5 @@
 .references-container {
+    overflow: hidden;
     width: 100%;
     padding: 64px 96px;
     display: flex;
@@ -12,8 +13,12 @@
         color: rgba(61, 207, 182, 1);
         text-align: center;
     }
+    @media screen and (max-width: 1060px) {
+        padding: 0px;
+    }
 }
 app-quotes {
+    
     width: 100%;
     display: flex;
     flex-direction: column;
