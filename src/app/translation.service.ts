@@ -7,10 +7,22 @@ import { TranslateService } from '@ngx-translate/core';
 export class TranslationService {
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+    const savedLanguage = localStorage.getItem('language');
+
+    if (savedLanguage) {
+      this.translate.use(savedLanguage);
+    } else {
+      this.translate.setDefaultLang('en');
+      this.translate.use('en');
+    }
   }
 
   public switchLanguage(language: string): void {
     this.translate.use(language);
+    localStorage.setItem('language', language);
+  }
+
+  public getCurrentLanguage(): string {
+    return this.translate.currentLang || this.translate.defaultLang || 'en';
   }
 }

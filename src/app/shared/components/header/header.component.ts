@@ -10,15 +10,28 @@ import { TranslationService } from '../../../translation.service';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  constructor(private translationService: TranslationService) {}
+  isMenuOpen = false;
+  isGerman = false;
+
+  constructor(private translationService: TranslationService) {
+    const storedMenuState = localStorage.getItem('menuOpen');
+    this.isMenuOpen = storedMenuState === 'true';
+
+    const currentLang = this.translationService.getCurrentLanguage();
+    this.isGerman = currentLang === 'de';
+  }
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+    localStorage.setItem('menuOpen', String(this.isMenuOpen));
+  }
 
   toggleLanguage(event: any): void {
-    const language = event.target.checked ? 'de' : 'en';
+    const isChecked = event.target.checked;
+    this.isGerman = isChecked;
+    const language = isChecked ? 'de' : 'en';
     this.translationService.switchLanguage(language);
   }
-  isMenuOpen = false;
-
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
 }
+
+
