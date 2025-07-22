@@ -95,7 +95,7 @@
         <span>{{ "contact.privacyError" | translate }} </span>
         }
       </div>
-      <button type="submit" class="btn-container">
+      <button type="submit" class="btn-container" [disabled]="!contactData.privacy || contactForm.invalid">
         <span>{{ "contact.submitButton" | translate }}</span>
       </button>
     </form>
